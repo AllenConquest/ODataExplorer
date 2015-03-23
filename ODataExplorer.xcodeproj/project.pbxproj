@@ -1,0 +1,426 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851B1AC0B3F50024209D /* AppDelegate.swift */; };
+		CAE2851E1AC0B3F50024209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851D1AC0B3F50024209D /* ViewController.swift */; };
+		CAE285211AC0B3F50024209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE2851F1AC0B3F50024209D /* Main.storyboard */; };
+		CAE285231AC0B3F50024209D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE285221AC0B3F50024209D /* Images.xcassets */; };
+		CAE285261AC0B3F50024209D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE285241AC0B3F50024209D /* LaunchScreen.xib */; };
+		CAE285321AC0B3F50024209D /* ODataExplorerTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE285311AC0B3F50024209D /* ODataExplorerTests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CAE2852C1AC0B3F50024209D /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CAE2850E1AC0B3F50024209D /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CAE285151AC0B3F50024209D;
+			remoteInfo = ODataExplorer;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CAE285161AC0B3F50024209D /* ODataExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODataExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE2851A1AC0B3F50024209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE2851B1AC0B3F50024209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		CAE2851D1AC0B3F50024209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		CAE285201AC0B3F50024209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		CAE285221AC0B3F50024209D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		CAE285251AC0B3F50024209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
+		CAE2852B1AC0B3F50024209D /* ODataExplorerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ODataExplorerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CAE285301AC0B3F50024209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		CAE285311AC0B3F50024209D /* ODataExplorerTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ODataExplorerTests.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CAE285131AC0B3F50024209D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE285281AC0B3F50024209D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CAE2850D1AC0B3F50024209D = {
+			isa = PBXGroup;
+			children = (
+				CAE285181AC0B3F50024209D /* ODataExplorer */,
+				CAE2852E1AC0B3F50024209D /* ODataExplorerTests */,
+				CAE285171AC0B3F50024209D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CAE285171AC0B3F50024209D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CAE285161AC0B3F50024209D /* ODataExplorer.app */,
+				CAE2852B1AC0B3F50024209D /* ODataExplorerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CAE285181AC0B3F50024209D /* ODataExplorer */ = {
+			isa = PBXGroup;
+			children = (
+				CAE2851B1AC0B3F50024209D /* AppDelegate.swift */,
+				CAE2851D1AC0B3F50024209D /* ViewController.swift */,
+				CAE2851F1AC0B3F50024209D /* Main.storyboard */,
+				CAE285221AC0B3F50024209D /* Images.xcassets */,
+				CAE285241AC0B3F50024209D /* LaunchScreen.xib */,
+				CAE285191AC0B3F50024209D /* Supporting Files */,
+			);
+			path = ODataExplorer;
+			sourceTree = "<group>";
+		};
+		CAE285191AC0B3F50024209D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE2851A1AC0B3F50024209D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CAE2852E1AC0B3F50024209D /* ODataExplorerTests */ = {
+			isa = PBXGroup;
+			children = (
+				CAE285311AC0B3F50024209D /* ODataExplorerTests.swift */,
+				CAE2852F1AC0B3F50024209D /* Supporting Files */,
+			);
+			path = ODataExplorerTests;
+			sourceTree = "<group>";
+		};
+		CAE2852F1AC0B3F50024209D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CAE285301AC0B3F50024209D /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CAE285151AC0B3F50024209D /* ODataExplorer */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE285351AC0B3F50024209D /* Build configuration list for PBXNativeTarget "ODataExplorer" */;
+			buildPhases = (
+				CAE285121AC0B3F50024209D /* Sources */,
+				CAE285131AC0B3F50024209D /* Frameworks */,
+				CAE285141AC0B3F50024209D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = ODataExplorer;
+			productName = ODataExplorer;
+			productReference = CAE285161AC0B3F50024209D /* ODataExplorer.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CAE2852A1AC0B3F50024209D /* ODataExplorerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CAE285381AC0B3F50024209D /* Build configuration list for PBXNativeTarget "ODataExplorerTests" */;
+			buildPhases = (
+				CAE285271AC0B3F50024209D /* Sources */,
+				CAE285281AC0B3F50024209D /* Frameworks */,
+				CAE285291AC0B3F50024209D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CAE2852D1AC0B3F50024209D /* PBXTargetDependency */,
+			);
+			name = ODataExplorerTests;
+			productName = ODataExplorerTests;
+			productReference = CAE2852B1AC0B3F50024209D /* ODataExplorerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CAE2850E1AC0B3F50024209D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0630;
+				ORGANIZATIONNAME = "Allen Conquest";
+				TargetAttributes = {
+					CAE285151AC0B3F50024209D = {
+						CreatedOnToolsVersion = 6.3;
+					};
+					CAE2852A1AC0B3F50024209D = {
+						CreatedOnToolsVersion = 6.3;
+						TestTargetID = CAE285151AC0B3F50024209D;
+					};
+				};
+			};
+			buildConfigurationList = CAE285111AC0B3F50024209D /* Build configuration list for PBXProject "ODataExplorer" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = CAE2850D1AC0B3F50024209D;
+			productRefGroup = CAE285171AC0B3F50024209D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CAE285151AC0B3F50024209D /* ODataExplorer */,
+				CAE2852A1AC0B3F50024209D /* ODataExplorerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CAE285141AC0B3F50024209D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE285211AC0B3F50024209D /* Main.storyboard in Resources */,
+				CAE285261AC0B3F50024209D /* LaunchScreen.xib in Resources */,
+				CAE285231AC0B3F50024209D /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE285291AC0B3F50024209D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CAE285121AC0B3F50024209D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE2851E1AC0B3F50024209D /* ViewController.swift in Sources */,
+				CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CAE285271AC0B3F50024209D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CAE285321AC0B3F50024209D /* ODataExplorerTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CAE2852D1AC0B3F50024209D /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CAE285151AC0B3F50024209D /* ODataExplorer */;
+			targetProxy = CAE2852C1AC0B3F50024209D /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CAE2851F1AC0B3F50024209D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE285201AC0B3F50024209D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		CAE285241AC0B3F50024209D /* LaunchScreen.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CAE285251AC0B3F50024209D /* Base */,
+			);
+			name = LaunchScreen.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CAE285331AC0B3F50024209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CAE285341AC0B3F50024209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CAE285361AC0B3F50024209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ODataExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		CAE285371AC0B3F50024209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = ODataExplorer/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+		CAE285391AC0B3F50024209D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODataExplorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODataExplorer.app/ODataExplorer";
+			};
+			name = Debug;
+		};
+		CAE2853A1AC0B3F50024209D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = ODataExplorerTests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/ODataExplorer.app/ODataExplorer";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CAE285111AC0B3F50024209D /* Build configuration list for PBXProject "ODataExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE285331AC0B3F50024209D /* Debug */,
+				CAE285341AC0B3F50024209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CAE285351AC0B3F50024209D /* Build configuration list for PBXNativeTarget "ODataExplorer" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE285361AC0B3F50024209D /* Debug */,
+				CAE285371AC0B3F50024209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CAE285381AC0B3F50024209D /* Build configuration list for PBXNativeTarget "ODataExplorerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CAE285391AC0B3F50024209D /* Debug */,
+				CAE2853A1AC0B3F50024209D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CAE2850E1AC0B3F50024209D /* Project object */;
+}
