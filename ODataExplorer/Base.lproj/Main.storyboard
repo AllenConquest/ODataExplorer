@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7703"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Detail View Controller-->
         <scene sceneID="EXw-ru-iBh">
             <objects>
-                <viewController id="WjN-Vm-AlS" sceneMemberID="viewController">
+                <viewController id="WjN-Vm-AlS" customClass="DetailViewController" customModule="ODataExplorer" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="dbX-MW-VZN"/>
                         <viewControllerLayoutGuide type="bottom" id="S57-n7-jdn"/>
@@ -17,10 +17,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Z8q-oY-tBQ"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9D-I9-DFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="92" y="404"/>
+            <point key="canvasLocation" x="904" y="404"/>
         </scene>
         <!--Root View Controller-->
         <scene sceneID="qLU-Jn-Lrm">
@@ -31,7 +32,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
-                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" id="AMI-Gf-eow">
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="default" indentationWidth="10" reuseIdentifier="Cell" id="AMI-Gf-eow">
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AMI-Gf-eow" id="0Tv-In-cUZ">
                                     <autoresizingMask key="autoresizingMask"/>
@@ -71,12 +72,30 @@
                 <splitViewController id="7mY-sg-4w0" sceneMemberID="viewController">
                     <connections>
                         <segue destination="in0-Hb-NAQ" kind="relationship" relationship="masterViewController" id="DPe-i8-ERb"/>
-                        <segue destination="WjN-Vm-AlS" kind="relationship" relationship="detailViewController" id="8Qf-uu-yNx"/>
+                        <segue destination="2Dx-HN-pff" kind="relationship" relationship="detailViewController" id="8Qf-uu-yNx"/>
                     </connections>
                 </splitViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Odp-Ma-ICt" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-728" y="73"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="YIL-Eu-30z">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="2Dx-HN-pff" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="brR-Bv-tmt">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="WjN-Vm-AlS" kind="relationship" relationship="rootViewController" id="Jmj-1o-F08"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Lei-Ge-XRM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="92" y="404"/>
         </scene>
     </scenes>
 </document>

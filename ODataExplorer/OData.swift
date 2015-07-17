@@ -42,42 +42,27 @@ struct Schema {
     var namespace = ""
 }
 
-struct Metadata {
+class MetaData {
     
-//    let schema =
     let xml: XMLIndexer
-    var entities = [String:AnyObject]()
-//    var entityType
-//    var Association
-//    var entityContainer
+    let schema: (xmlns: String?, namespace: String?)?
+    var entities = [Entity]()
+    // TODO add all MetaData types such as ComplexTypes, Associations
 
-    internal func entityTypes(xml: XMLIndexer) -> [String:AnyObject] {
+    required init(xml: XMLIndexer) {
         
-        for child in xml {
-            if let entityType = child.element {
-                if entityType.name == "EntityType" {
-                    println("Entity: \(entityType.name) - attributes: \(entityType.attributes)")
-                    if let key = entityType.attributes["Name"] {
-                        
-                        for propertyChild in child.children {
-                            
-                            if let property = propertyChild.element {
-                                
-                                //                            if prope
-                            }
-                            
-                        }
-                    }
-                    
-                    
-                }
-            }
+        self.xml = xml
+        let schema = xml["edmx:Edmx"]["edmx:DataServices"]["Schema"]
+        let xmlns = schema.element?.attributes["xmlns"]
+        let namespace = schema.element?.attributes["Namespace"]
+        self.schema = (xmlns, namespace)
+        
+        let entityTypes = schema["EntityType"]
+        for child in entityTypes {
+            let entity = Entity(xml: child)
+            self.entities.append(entity)
         }
-        return entities
-    }
-    
-    func getEntities() -> [String:AnyObject] {
-        return entities
+        
     }
 }
 

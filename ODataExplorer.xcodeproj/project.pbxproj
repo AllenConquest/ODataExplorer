@@ -11,8 +11,10 @@
 		CA3F57401AC0DBF10007DD71 /* XMLTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F573F1AC0DBF10007DD71 /* XMLTests.swift */; };
 		CA3F57421AC14CE70007DD71 /* OData.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F57411AC14CE70007DD71 /* OData.swift */; };
 		CA3F57441AC14CF40007DD71 /* ODataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA3F57431AC14CF40007DD71 /* ODataLoader.swift */; };
+		CA4FA4F91B57883F000831ED /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4F81B57883F000831ED /* MasterViewController.swift */; };
+		CA4FA4FB1B578856000831ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FA1B578856000831ED /* DetailViewController.swift */; };
+		CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FE1B5791EB000831ED /* Entity.swift */; };
 		CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851B1AC0B3F50024209D /* AppDelegate.swift */; };
-		CAE2851E1AC0B3F50024209D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851D1AC0B3F50024209D /* ViewController.swift */; };
 		CAE285211AC0B3F50024209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE2851F1AC0B3F50024209D /* Main.storyboard */; };
 		CAE285231AC0B3F50024209D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE285221AC0B3F50024209D /* Images.xcassets */; };
 		CAE285261AC0B3F50024209D /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = CAE285241AC0B3F50024209D /* LaunchScreen.xib */; };
@@ -36,6 +38,9 @@
 		CA3F573F1AC0DBF10007DD71 /* XMLTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = XMLTests.swift; sourceTree = "<group>"; };
 		CA3F57411AC14CE70007DD71 /* OData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = OData.swift; sourceTree = "<group>"; };
 		CA3F57431AC14CF40007DD71 /* ODataLoader.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ODataLoader.swift; sourceTree = "<group>"; };
+		CA4FA4F81B57883F000831ED /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
+		CA4FA4FA1B578856000831ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
+		CA4FA4FE1B5791EB000831ED /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
 		CAC776D61AC0CE3500419FF1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/Alamofire.framework"; sourceTree = "<group>"; };
 		CAC776D71AC0CE3500419FF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/Nimble.framework"; sourceTree = "<group>"; };
 		CAC776D81AC0CE3500419FF1 /* Pods_ODataExplorer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ODataExplorer.framework; path = "Pods/../build/Debug-iphoneos/Pods_ODataExplorer.framework"; sourceTree = "<group>"; };
@@ -44,7 +49,6 @@
 		CAE285161AC0B3F50024209D /* ODataExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODataExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE2851A1AC0B3F50024209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE2851B1AC0B3F50024209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		CAE2851D1AC0B3F50024209D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		CAE285201AC0B3F50024209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		CAE285221AC0B3F50024209D /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		CAE285251AC0B3F50024209D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -120,13 +124,15 @@
 			isa = PBXGroup;
 			children = (
 				CAE2851B1AC0B3F50024209D /* AppDelegate.swift */,
-				CAE2851D1AC0B3F50024209D /* ViewController.swift */,
 				CAE2851F1AC0B3F50024209D /* Main.storyboard */,
 				CAE285221AC0B3F50024209D /* Images.xcassets */,
 				CAE285241AC0B3F50024209D /* LaunchScreen.xib */,
 				CAE285191AC0B3F50024209D /* Supporting Files */,
 				CA3F57411AC14CE70007DD71 /* OData.swift */,
 				CA3F57431AC14CF40007DD71 /* ODataLoader.swift */,
+				CA4FA4F81B57883F000831ED /* MasterViewController.swift */,
+				CA4FA4FA1B578856000831ED /* DetailViewController.swift */,
+				CA4FA4FE1B5791EB000831ED /* Entity.swift */,
 			);
 			path = ODataExplorer;
 			sourceTree = "<group>";
@@ -310,8 +316,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CA4FA4F91B57883F000831ED /* MasterViewController.swift in Sources */,
 				CA3F57441AC14CF40007DD71 /* ODataLoader.swift in Sources */,
-				CAE2851E1AC0B3F50024209D /* ViewController.swift in Sources */,
+				CA4FA4FB1B578856000831ED /* DetailViewController.swift in Sources */,
+				CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */,
 				CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */,
 				CA3F57421AC14CE70007DD71 /* OData.swift in Sources */,
 			);
