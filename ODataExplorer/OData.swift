@@ -9,10 +9,13 @@
 import Alamofire
 import SWXMLHash
 
+enum URLStrings: String {
+    case metadata = "/$metadata"
+}
+
 struct OData {
     
     enum Router: URLRequestConvertible {
-        static let baseURLString = "https://live.energysys.com"
         
         case Metadata(String)
         case Resource(String, String, [String:String])
@@ -20,15 +23,15 @@ struct OData {
         var URLRequest: NSURLRequest {
             let (path: String, parameters: [String: AnyObject]) = {
                 switch self {
-                case .Metadata (let asset):
-                    return ("/odata/resource.svc/\(asset)/$metadata", [:])
-                case .Resource(let asset, let resource, let params):
-                    return ("/odata/resource.svc/\(asset)/\(resource)", params)
+                case .Metadata (let url):
+                    return ("\(url)\(URLStrings.metadata.rawValue)", [:])
+                case .Resource(let url, let resource, let params):
+                    return ("\(url)/\(resource)", params)
                 }
                 }()
             
-            let URL = NSURL(string: Router.baseURLString)
-            let URLRequest = NSURLRequest(URL: URL!.URLByAppendingPathComponent(path))
+            let URL = NSURL(string: path)
+            let URLRequest = NSURLRequest(URL: URL!)
             let encoding = Alamofire.ParameterEncoding.URL
             
             return encoding.encode(URLRequest, parameters: parameters).0
@@ -52,7 +55,7 @@ class MetaData {
     required init(xml: XMLIndexer) {
         
         self.xml = xml
-        let schema = xml["edmx:Edmx"]["edmx:DataServices"]["Schema"]
+        let schema = xml["edmx:Edmx"]["edmx:DataServices"]["Schema"][0]
         let xmlns = schema.element?.attributes["xmlns"]
         let namespace = schema.element?.attributes["Namespace"]
         self.schema = (xmlns, namespace)

@@ -14,6 +14,8 @@
 		CA4FA4F91B57883F000831ED /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4F81B57883F000831ED /* MasterViewController.swift */; };
 		CA4FA4FB1B578856000831ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FA1B578856000831ED /* DetailViewController.swift */; };
 		CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FE1B5791EB000831ED /* Entity.swift */; };
+		CACF4FFA1B5957540071DFA9 /* keyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF4FF91B5957540071DFA9 /* keyChain.swift */; };
+		CACF4FFC1B5A4F090071DFA9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CACF4FFB1B5A4F090071DFA9 /* Settings.bundle */; };
 		CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851B1AC0B3F50024209D /* AppDelegate.swift */; };
 		CAE285211AC0B3F50024209D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CAE2851F1AC0B3F50024209D /* Main.storyboard */; };
 		CAE285231AC0B3F50024209D /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CAE285221AC0B3F50024209D /* Images.xcassets */; };
@@ -46,6 +48,8 @@
 		CAC776D81AC0CE3500419FF1 /* Pods_ODataExplorer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ODataExplorer.framework; path = "Pods/../build/Debug-iphoneos/Pods_ODataExplorer.framework"; sourceTree = "<group>"; };
 		CAC776D91AC0CE3500419FF1 /* Quick.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Quick.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/Quick.framework"; sourceTree = "<group>"; };
 		CAC776DA1AC0CE3500419FF1 /* SWXMLHash.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SWXMLHash.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/SWXMLHash.framework"; sourceTree = "<group>"; };
+		CACF4FF91B5957540071DFA9 /* keyChain.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = keyChain.swift; sourceTree = "<group>"; };
+		CACF4FFB1B5A4F090071DFA9 /* Settings.bundle */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.plug-in"; path = Settings.bundle; sourceTree = "<group>"; };
 		CAE285161AC0B3F50024209D /* ODataExplorer.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ODataExplorer.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		CAE2851A1AC0B3F50024209D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		CAE2851B1AC0B3F50024209D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -123,6 +127,7 @@
 		CAE285181AC0B3F50024209D /* ODataExplorer */ = {
 			isa = PBXGroup;
 			children = (
+				CACF4FFB1B5A4F090071DFA9 /* Settings.bundle */,
 				CAE2851B1AC0B3F50024209D /* AppDelegate.swift */,
 				CAE2851F1AC0B3F50024209D /* Main.storyboard */,
 				CAE285221AC0B3F50024209D /* Images.xcassets */,
@@ -133,6 +138,7 @@
 				CA4FA4F81B57883F000831ED /* MasterViewController.swift */,
 				CA4FA4FA1B578856000831ED /* DetailViewController.swift */,
 				CA4FA4FE1B5791EB000831ED /* Entity.swift */,
+				CACF4FF91B5957540071DFA9 /* keyChain.swift */,
 			);
 			path = ODataExplorer;
 			sourceTree = "<group>";
@@ -247,6 +253,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				CACF4FFC1B5A4F090071DFA9 /* Settings.bundle in Resources */,
 				CAE285211AC0B3F50024209D /* Main.storyboard in Resources */,
 				CAE285261AC0B3F50024209D /* LaunchScreen.xib in Resources */,
 				CAE285231AC0B3F50024209D /* Images.xcassets in Resources */,
@@ -321,6 +328,7 @@
 				CA4FA4FB1B578856000831ED /* DetailViewController.swift in Sources */,
 				CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */,
 				CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */,
+				CACF4FFA1B5957540071DFA9 /* keyChain.swift in Sources */,
 				CA3F57421AC14CE70007DD71 /* OData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

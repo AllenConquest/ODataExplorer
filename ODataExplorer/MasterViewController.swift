@@ -39,7 +39,8 @@ class MasterViewController: UITableViewController {
     
     func loadMetaData() {
         isLoading = true
-        getData({ (metaData, error) in
+        let asset = ""
+        getData(asset, { (metaData, error) in
             if error != nil
             {
                 // TODO: improved error handling

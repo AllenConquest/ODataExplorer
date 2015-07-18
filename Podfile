@@ -5,13 +5,11 @@ platform :ios, '8.0'
 
 target 'ODataExplorer' do
 
-#pod 'InAppSettingsKit'
-#pod 'HanekeSwift', :path => '~/Developer/HanekeSwift'
+pod 'InAppSettingsKit'
+#pod 'HanekeSwift'
 pod 'Alamofire'
 pod 'SWXMLHash'
-#pod 'Alamofire', :git => 'https://github.com/Alamofire/Alamofire.git', :branch => 'xcode-6.3'
-#pod 'SWXMLHash', '0.6.4'
-pod 'Argo'
+#pod 'Argo'
 #pod 'Quick'
 #pod 'Nimble'
 #pod 'GoogleAnalytics-iOS-SDK', '~> 3.10'
