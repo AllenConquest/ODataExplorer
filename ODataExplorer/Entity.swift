@@ -8,20 +8,34 @@
 
 import SWXMLHash
 
-class Entity {
+struct Entity {
     
-    typealias Property = (name: String, type: String, nullable: Bool)
     typealias NavigationProperty = (name: String, relationship: String, fromRole: String, toRole: String)
     
     let name: String?
     var key: [String]?
-    var property: [Property]?
-    var navigationProperty: [NavigationProperty]?
+    var property = [Property]()
+    //var navigationProperty = [NavigationProperty]()
     // TODO Add all types of nodes and initialise them
     
-    required init(xml: XMLIndexer) {
+    init(xml: XMLIndexer) {
         
         self.name = xml.element?.attributes["Name"]
         
+        let properties = xml["Property"]
+        for child in properties {
+            let property = Property(xml: child)
+            self.property.append(property)
+        }
     }
+
+    func convertToArray() -> [AnyObject] {
+        
+        var output = [AnyObject]()
+        for p in property {
+            output.append(p.name!)
+        }
+        return output
+    }
+
 }

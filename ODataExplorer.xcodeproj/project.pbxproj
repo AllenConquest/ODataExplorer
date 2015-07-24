@@ -14,6 +14,8 @@
 		CA4FA4F91B57883F000831ED /* MasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4F81B57883F000831ED /* MasterViewController.swift */; };
 		CA4FA4FB1B578856000831ED /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FA1B578856000831ED /* DetailViewController.swift */; };
 		CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = CA4FA4FE1B5791EB000831ED /* Entity.swift */; };
+		CAA11DBC1B5C47C100BF8AB6 /* Property.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA11DBB1B5C47C100BF8AB6 /* Property.swift */; };
+		CAA11DBE1B5CD0AD00BF8AB6 /* Metadata.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAA11DBD1B5CD0AD00BF8AB6 /* Metadata.swift */; };
 		CACF4FFA1B5957540071DFA9 /* keyChain.swift in Sources */ = {isa = PBXBuildFile; fileRef = CACF4FF91B5957540071DFA9 /* keyChain.swift */; };
 		CACF4FFC1B5A4F090071DFA9 /* Settings.bundle in Resources */ = {isa = PBXBuildFile; fileRef = CACF4FFB1B5A4F090071DFA9 /* Settings.bundle */; };
 		CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = CAE2851B1AC0B3F50024209D /* AppDelegate.swift */; };
@@ -43,6 +45,8 @@
 		CA4FA4F81B57883F000831ED /* MasterViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MasterViewController.swift; sourceTree = "<group>"; };
 		CA4FA4FA1B578856000831ED /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		CA4FA4FE1B5791EB000831ED /* Entity.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Entity.swift; sourceTree = "<group>"; };
+		CAA11DBB1B5C47C100BF8AB6 /* Property.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Property.swift; sourceTree = "<group>"; };
+		CAA11DBD1B5CD0AD00BF8AB6 /* Metadata.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Metadata.swift; sourceTree = "<group>"; };
 		CAC776D61AC0CE3500419FF1 /* Alamofire.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Alamofire.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/Alamofire.framework"; sourceTree = "<group>"; };
 		CAC776D71AC0CE3500419FF1 /* Nimble.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Nimble.framework; path = "Pods/../build/Debug-iphoneos/Pods-ODataExplorer/Nimble.framework"; sourceTree = "<group>"; };
 		CAC776D81AC0CE3500419FF1 /* Pods_ODataExplorer.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Pods_ODataExplorer.framework; path = "Pods/../build/Debug-iphoneos/Pods_ODataExplorer.framework"; sourceTree = "<group>"; };
@@ -132,13 +136,15 @@
 				CAE2851F1AC0B3F50024209D /* Main.storyboard */,
 				CAE285221AC0B3F50024209D /* Images.xcassets */,
 				CAE285241AC0B3F50024209D /* LaunchScreen.xib */,
+				CACF4FF91B5957540071DFA9 /* keyChain.swift */,
 				CAE285191AC0B3F50024209D /* Supporting Files */,
 				CA3F57411AC14CE70007DD71 /* OData.swift */,
 				CA3F57431AC14CF40007DD71 /* ODataLoader.swift */,
 				CA4FA4F81B57883F000831ED /* MasterViewController.swift */,
 				CA4FA4FA1B578856000831ED /* DetailViewController.swift */,
 				CA4FA4FE1B5791EB000831ED /* Entity.swift */,
-				CACF4FF91B5957540071DFA9 /* keyChain.swift */,
+				CAA11DBB1B5C47C100BF8AB6 /* Property.swift */,
+				CAA11DBD1B5CD0AD00BF8AB6 /* Metadata.swift */,
 			);
 			path = ODataExplorer;
 			sourceTree = "<group>";
@@ -329,6 +335,8 @@
 				CA4FA4FF1B5791EB000831ED /* Entity.swift in Sources */,
 				CAE2851C1AC0B3F50024209D /* AppDelegate.swift in Sources */,
 				CACF4FFA1B5957540071DFA9 /* keyChain.swift in Sources */,
+				CAA11DBC1B5C47C100BF8AB6 /* Property.swift in Sources */,
+				CAA11DBE1B5CD0AD00BF8AB6 /* Metadata.swift in Sources */,
 				CA3F57421AC14CE70007DD71 /* OData.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

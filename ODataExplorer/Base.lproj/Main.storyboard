@@ -15,9 +15,20 @@
                     <view key="view" contentMode="scaleToFill" id="48f-VU-GGe">
                         <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="E5P-4d-6nG">
+                                <rect key="frame" x="234" y="289" width="133" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="Z8q-oY-tBQ"/>
+                    <connections>
+                        <outlet property="detailDescriptionLabel" destination="E5P-4d-6nG" id="BCY-sj-Icr"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="a9D-I9-DFG" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -37,10 +48,13 @@
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="AMI-Gf-eow" id="0Tv-In-cUZ">
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
+                                <connections>
+                                    <segue destination="UBa-tD-lRx" kind="show" identifier="showNextPage" id="B9n-OV-Xf7"/>
+                                </connections>
                             </tableViewCell>
                         </prototypes>
                         <connections>
-                            <outlet property="dataSource" destination="UBa-tD-lRx" id="Kzi-gq-pJ9"/>
+                            <outlet property="dataSource" destination="UBa-tD-lRx" id="lsK-dj-qrZ"/>
                             <outlet property="delegate" destination="UBa-tD-lRx" id="30B-HX-JGj"/>
                         </connections>
                     </tableView>
@@ -98,4 +112,7 @@
             <point key="canvasLocation" x="92" y="404"/>
         </scene>
     </scenes>
+    <inferredMetricsTieBreakers>
+        <segue reference="YQp-tm-K0g"/>
+    </inferredMetricsTieBreakers>
 </document>

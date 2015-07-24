@@ -6,6 +6,7 @@
 //  Copyright (c) 2015 Allen Conquest. All rights reserved.
 //
 
+import Foundation
 import Alamofire
 import SWXMLHash
 import InAppSettingsKit
@@ -13,7 +14,7 @@ import InAppSettingsKit
 // Load OData document
 
 
-func getData(asset: String, completionHandler: (MetaData?, NSError?) -> Void) {
+func getData(asset: String, completionHandler: (XMLElement?, NSError?) -> Void) {
     
     processDefaultSettings()
     let path = getBaseURL()
@@ -123,15 +124,15 @@ extension Alamofire.Request {
                 
                 let metaData = MetaData(xml: document)
                 
-                return (metaData, XMLSerializationError)
+                return (document.element, XMLSerializationError)
             } else {
                 return (nil, nil)
             }
         }
     }
-    func responseXML(completionHandler: (NSURLRequest, NSHTTPURLResponse?, MetaData?, NSError?) -> Void) -> Self {
+    func responseXML(completionHandler: (NSURLRequest, NSHTTPURLResponse?, XMLElement?, NSError?) -> Void) -> Self {
         return response(queue: dispatch_get_main_queue(), serializer: Request.XMLResponseSerializer()) { (req, res, metaData, error) -> Void in
-            completionHandler(req, res, metaData as? MetaData, error)
+            completionHandler(req, res, metaData as? XMLElement, error)
         }
     }
 }
